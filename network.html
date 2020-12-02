@@ -44,69 +44,45 @@
 
 						<!-- Post -->
 							<article class="box post">
-								<h3>And yeah, that's basically it</h3>
-								<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-								ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-								sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-								in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-								magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-								consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-								justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-								mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-								Curabitur leo nibh, rutrum eu malesuada in tristique</p>
-								<p>Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat
-								Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit ligula
-								vel quam viverra sit amet mollis tortor congue. Sed quis mauris sit amet
-								magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada in,
-								tristique Curabitur leo nibh, rutrum eu malesuada in, tristique
-								at erat lorem ipsum dolor sit amet lorem ipsum sed consequat magna
-								tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros consequat
-								magna tempus</p>
-								<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-								ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-								sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-								in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-								consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-								in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-								magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-								consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-								justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-								mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-								Curabitur leo nibh, rutrum eu malesuada in tristique</p>
-								<h3>Accumsan lorem ipsum veroeros</h3>
-								<p>Consequat Phasellus laoreet massa id in, tristique at erat lorem
-								ipsum dolor sit amet lorem ipsum sed consequat magna tempus veroeros
-								consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-								justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-								mollis tortor congue. Sed quis mauris sit amet magna.</p>
-								<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-								ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-								sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-								in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-								consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-								in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-								magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-								consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-								justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-								mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-								Curabitur leo nibh, rutrum eu malesuada in tristique</p>
-								<h3>Ligula suspcipit fusce veroeros</h3>
-								<p>Nullam dolore etiam sed massa id in, tristique at erat lorem
-								ipsum dolor sit amet lorem ipsum sed consequat magna tempus veroeros
-								consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-								justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-								mollis tortor congue. Sed quis mauris sit amet magna.</p>
-								<p>Sed massa id justo mattis pharetra. Fusce suscipit
-								ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-								sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-								in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-								consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-								in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-								magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-								consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-								justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-								mollis tortor congue. Sed quis mauris sit amet magna accumsan.</p>
-							</article>
+								<h3>Creating Nodes</h3>
+								<p>We went through the dataset and created a single node for each contestant 
+                                    containing the following attributes:</p>
+								<ul>
+                                    <li> name: Full name of contestant
+                                    <li> season: Bachelor/Bachelorette season 
+                                    <li> BP: Bachelor Pad season
+                                    <li> BIP: Bachelor in Paradise season
+                                    <li> age: Age of contestant </li>
+                                    <li> profession: The contestant's occupation</li>
+                                    <li> homestate: What state the contestant is from</li>
+                                    <li> fip_rose (boolean): Did the contestant receive the First Impression Rose</li>
+                                    <li> elim_week: In what week the contestant was sent home</li>
+                                    <li> main_char: Season that the contestant was the bachelor/bachelorette </li>
+                                </ul>
+                                <h3>Adding Connections</h3>
+                                <p>We then made connections between characters if they had appeared on the same
+                                    Bachelor, Bachelorette, Bachelor Pad or Bachelor in Paradise season.
+                                </p>
+                                <p>This resulted in a network with 686 nodes (contestants) and 10346 connections. Out
+                                    of those connections 1402 were connections outside of (between separate) Bachelor/Bachelorette seasons.
+                                </p>
+                                <h3>Visualizing the Network</h3>
+                                <p>A visualization of the network can be seen below.</p>
+                                <p>The node colors represent which season the characters are from:</p>
+                                <ul>
+                                    <li>Green: The contestant appeared on a BP or BiP season</li>
+                                    <li>Red: The contestant only appeared in Bachelorette</li>
+                                    <li>Blue: The contestant only appeared in Bachelor</li>
+                                </ul>
+                                <span class="image featured"><img src="images/bachelor_network.png" alt="" /></span>
+                                <p> We can definitely see that the seasons group together but it is interesting to see that some hubs appear.
+                                    <p> There is one season in the lower right corner where the nodes are much smaller - this is because in the first season of the bachelor there were much fewer contestants than in the later ones. </p>
+                                    <p>The hubs on the outer part of the network are the contestants from the first seasons of the Bachelor/Bachelorette because then we didn't have Bachelor Pad or Bachelor in Paradise so there are no connections between series except between the next chosen Bachelor/Bachelorette and the contestants on their season. </p>
+                                    <p>Green nodes are bigger because those contestants have made connections outside of their bachelor/bachelorette seasons inside BP or BIP. </p>
+                                    <p>The biggest nodes are people that took part in one or more BP/BIP season or were chosen to be the bachelor/bachelorette in a subsequent season. </p>
+                                    <p>The hub of green nodes in the middle is a group of people that appeared regularly on the BP or BIP seasons and therefore made connections with many people outside of their bachelor/bachelorette seasons.</p>
+                                    <p>We have more red nodes in the graph because there have been made more bachelor seasons than bachelorette so we have more female contestants than male ones.</p>
+                            </article>
 
 					</div>
 				</div>

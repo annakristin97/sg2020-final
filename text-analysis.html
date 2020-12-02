@@ -44,68 +44,72 @@
 
 						<!-- Post -->
 							<article class="box post">
-								<h3>And yeah, that's basically it</h3>
-								<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-								ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-								sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-								in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-								magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-								consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-								justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-								mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-								Curabitur leo nibh, rutrum eu malesuada in tristique</p>
-								<p>Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat
-								Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit ligula
-								vel quam viverra sit amet mollis tortor congue. Sed quis mauris sit amet
-								magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada in,
-								tristique Curabitur leo nibh, rutrum eu malesuada in, tristique
-								at erat lorem ipsum dolor sit amet lorem ipsum sed consequat magna
-								tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros consequat
-								magna tempus</p>
-								<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-								ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-								sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-								in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-								consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-								in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-								magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-								consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-								justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-								mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-								Curabitur leo nibh, rutrum eu malesuada in tristique</p>
-								<h3>Accumsan lorem ipsum veroeros</h3>
-								<p>Consequat Phasellus laoreet massa id in, tristique at erat lorem
-								ipsum dolor sit amet lorem ipsum sed consequat magna tempus veroeros
-								consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-								justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-								mollis tortor congue. Sed quis mauris sit amet magna.</p>
-								<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-								ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-								sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-								in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-								consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-								in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-								magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-								consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-								justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-								mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-								Curabitur leo nibh, rutrum eu malesuada in tristique</p>
-								<h3>Ligula suspcipit fusce veroeros</h3>
-								<p>Nullam dolore etiam sed massa id in, tristique at erat lorem
-								ipsum dolor sit amet lorem ipsum sed consequat magna tempus veroeros
-								consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-								justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-								mollis tortor congue. Sed quis mauris sit amet magna.</p>
-								<p>Sed massa id justo mattis pharetra. Fusce suscipit
-								ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-								sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-								in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-								consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-								in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-								magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-								consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-								justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-								mollis tortor congue. Sed quis mauris sit amet magna accumsan.</p>
+								<h2>Sentiment Analysis</h2>
+								<h4>Contestant Sentiment Values</h4>
+								<p>We calculated the sentiment of each contestants wiki page and stored
+									as an attribute for each node. The sentiment value shows how "happy" a text 
+									is. A higher sentiment value implies a happier text.
+								</p>
+								<p>We used these values to idenfity who were the biggest villains out of
+									the group. The contestants with the lowest sentiment value were the following:
+								</p>
+								<div style="text-align:center">
+									<span class="image"><img style="width:200px;" src="images/lowest_sentiment.png" alt="" /></span>
+								</div>
+								<p>If we look at Michael Nance for example we can see that his wiki page says the following:</p>
+								<blockquote>He died on May 29, 2017. The official cause of his death was multiple drug toxicity, according to the Travis County Office of the Medical Examiner. His death was ruled as accidental.</blockquote>
+								<p>And if we also look at Chad Johnson we get:</p>
+								<blockquote>On February 24, 2020, he was arrested for robbery with domestic violence enhancement. His bail was set at $100,000, according to public records. He has been released from jail on bond. He is due back in court on March 17. On February 29, 2020</blockquote>
+								<p>So we can see that we can actually identify those who were less popular than
+									others on their season.
+								</p>
+								<h4>Community Sentiment Values</h4>
+								<p>We also looked at the communities and compared the average sentiment values
+									of the characters in each community.
+								</p>
+								<div style="text-align:center">
+									<span class="image"><img style="width:400px;" src="images/community_sentiment.png" alt="" /></span>
+								</div>
+								<p>We can see that the average sentmient values for communities are very similar
+									so there is probably a good balance of "popular" and "unpopular" people in each
+									community and no community has only "villains" or only "heroes".
+								</p>
+								<h4>Bachelor/Bachelorette Sentiment Values</h4>
+								<p>We also investigated the sentiment values of the people that have been the Bachelor
+									or the Bachelorette.
+								</p>
+								<div style="text-align:center">
+									<span class="image"><img style="width:200px;" src="images/b_b_sentiment.png" alt="" /></span>
+								</div>
+								<p>We can see values ranging from 5.55 to 6.00</p>
+								<p>
+									Clare Crawley has the lowest score of 5.55. Strangely enough she was supposed to be the Bachelorette in the latest season but quit after only 2 weeks which hase resulted in a decrease in her popularity within the Bachelor franchise fandom. This could explain why her wikipedia page is not as positive as the other's.
+								</p>
+								<p>
+									Trista Sutter has a score of over 6. She appeared in the first season of the Bachelorette so there isn't as much information about her as some of the newest contestants. The next-happiest is Ali Fedotowsky. She was a super popular and uncontroversial contestant so it makes sense that here wikipedia page is mostly positive.
+								</p>
+								<h2>Wordclouds</h2>
+								<p>
+									It is interesting to see what words are the most common words used in the characters's wiki pages.
+									We used the WordCloud tool to display the most common words used for various groups.
+								</p>
+								<h4>Most Common Words In Female Contestant Wikis</h4>
+								<p>The most common words used in the female contestants wiki pages were the following:</p>
+								<div style="text-align:center">
+									<span class="image"><img style="width:300px;" src="images/female_wordcloud.png" alt="" /></span>
+								</div>
+								<h4>Most Common Words In Male Contestant Wikis</h4>
+								<p>The most common words used in the male contestants wiki pages were the following:</p>
+								<div style="text-align:center">
+									<span class="image"><img style="width:300px;" src="images/male_wordcloud.png" alt="" /></span>
+								</div>
+								<p>
+									The words are quite similar for the female and male wordclouds - besides the names of the 
+									contestants which are female in the first one and male in the second one.
+									The reason why we probably can't get a good idea of which words are unique to the genders 
+									is because we only have two "communities" so it's hard to see which words are unique to it's 
+									community when we only have one other to compare it to.
+								</p>
 							</article>
 
 					</div>
